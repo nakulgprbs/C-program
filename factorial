@@ -1,0 +1,21 @@
+// C++ Program to remove the characters from a string except alphabets
+#include <cstring> 
+#include <iostream> 
+using namespace std; 
+
+int fact(int n){
+    int fact =1;
+    while(n>1){
+        fact = fact*n;
+        n--;
+    }
+    return fact;
+}
+int main(){
+    int n;
+    
+    cin>>n; // enter value of n
+    cout<<fact(n);
+    
+    return 0;
+}
