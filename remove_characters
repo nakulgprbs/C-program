@@ -1,0 +1,24 @@
+// C++ Program to remove the characters from a string except alphabets
+#include <cstring> 
+#include <iostream> 
+using namespace std; 
+
+string alphabets_str(string str) 
+{ 
+    string result = ""; 
+    for (char c : str) { 
+        if (isalpha(c)) { 
+            result += c; 
+        } 
+    } 
+    return result; 
+} 
+
+int main() 
+{ 
+string str = "N@akul_sin$gh";
+
+cout<<"new string with Alphabets only "<<alphabets_str(str)<<endl;
+
+	return 0; 
+}
