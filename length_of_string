@@ -1,0 +1,15 @@
+// finding length of string using for lenth 
+// note you can also use strlen to find length directly 
+#include <iostream>
+using namespace std;
+int main() {
+   string str = "Nakul_singh";
+   int length = 0;
+   
+   for(int i =0; str[i] != '\0'; i++){
+       length++;
+   }
+   cout<<"Length of string is :"<<length<<endl;
+
+    return 0;
+}
